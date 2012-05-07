@@ -1,5 +1,7 @@
 colorscheme slate
-set guifont=Monaco:h16
+set guifont=DejaVu\ Sans\ Mono:h16
+set lines=100  " Start maximized
+
 " Add the virtualenv's site-packages to vim path
 py << EOF
 import os.path
