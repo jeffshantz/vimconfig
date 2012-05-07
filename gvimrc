@@ -1,6 +1,15 @@
 colorscheme slate
-set guifont=DejaVu\ Sans\ Mono:h16
-set lines=100  " Start maximized
+
+if has("unix")
+        let s:uname = system("echo -n \"$(uname)\"")
+        if s:uname == "Linux"
+                set guifont=DejaVu\ Sans\ Mono\ 16
+        else
+                set guifont=DejaVu\ Sans\ Mono:h16
+        endif
+endif
+set lines=55
+set columns=128
 
 " Add the virtualenv's site-packages to vim path
 py << EOF
