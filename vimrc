@@ -46,6 +46,7 @@ set expandtab
 set tabstop=8
 set shiftwidth=8
 set textwidth=0
+set number
 
 
 
