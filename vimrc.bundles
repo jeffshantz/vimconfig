@@ -1,0 +1,20 @@
+" let Vundle manage Vundle (required)
+Bundle 'gmarik/vundle'
+
+Bundle 'bling/vim-airline'
+Bundle 'bling/vim-bufferline'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'xenoterracide/html.vim'
+Bundle 'vim-scripts/ctags.vim'
+Bundle 'vim-scripts/tComment'
+Bundle 'godlygeek/tabular'
+
+" snipmate and its dependencies
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/vim-snippets"
+Bundle "garbas/vim-snipmate"
+
+Bundle "sukima/xmledit"
