@@ -4,25 +4,25 @@ My Vim Configuration
 Initial Setup
 -------------
 
-1. Clone this repository to `~/.vim`
+Clone this repository to `~/.vim`
 
 ```bash
 git clone https://github.com/jeffshantz/vimconfig.git ~/.vim
 ```
 
-2. Install `vundle`:
+Install `vundle`:
 
 ```bash
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ```
 
-3. Install all bundles:
+Install all bundles:
 
 ```bash
 vim +BundleInstall +qall
 ```
 
-4. Link `~/.vimrc` to `~/.vim/vimrc` (if necessary)
+Link `~/.vimrc` to `~/.vim/vimrc` (if necessary)
 
 ```bash
 ln -s ~/.vim/vimrc ~/.vimrc
@@ -55,4 +55,4 @@ Some of the features of this configuration include:
     * `sop` - `System.out.println("text");`
   * Additional snippets can be added to the `.vim/snippets` directory
 
-* Ctrl-p file navigation
+* `Ctrl-p` file navigation
