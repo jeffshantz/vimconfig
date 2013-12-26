@@ -38,22 +38,21 @@ Some of the features of this configuration include:
 * Powerline status bar
 
 * Tabularize
-
-** Use `,a=` to align by `=`
-** Use `,a:` to align by `:`
-** Tabularize is called every time you type `|`, which is great for Cucumber tables
+  * Use `,a=` to align by `=`
+  * Use `,a:` to align by `:`
+  * Tabularize is called every time you type `|`, which is great for Cucumber tables
 
 * Comment boxes
-** An 80-character comment box is inserted when you use `,cb #`, where `#` is the comment
-   character to use.
+  * An 80-character comment box is inserted when you use `,cb #`, where `#` is the comment
+    character to use.
 
 * Snippets
-** Plenty of snippets in `.vim/bundle/vim-snippets/snippets/`
-** I added a few custom Java snippets that I use in my teaching:
-*** `pc` - `public class ClassName { }`
-*** `psvm` - `public static void main(String[] args) { }`
-*** `psvmte` - `public static void main(String[] args) throws Exception { }`
-*** `sop` - `System.out.println("text");`
-** Additional snippets can be added to the `.vim/snippets` directory
+  * Plenty of snippets in `.vim/bundle/vim-snippets/snippets/`
+  * I added a few custom Java snippets that I use in my teaching:
+    * `pc` - `public class ClassName { }`
+    * `psvm` - `public static void main(String[] args) { }`
+    * `psvmte` - `public static void main(String[] args) throws Exception { }`
+    * `sop` - `System.out.println("text");`
+  * Additional snippets can be added to the `.vim/snippets` directory
 
 * Ctrl-p file navigation
