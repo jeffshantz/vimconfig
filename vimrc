@@ -141,4 +141,4 @@ endfunction
 " ##############################################################################
 
 " Skeleton for pom.xml
-au BufNewFile pom.xml 0r ~/.vim/skel/skel.pom.xml
+"au BufNewFile pom.xml 0r ~/.vim/skel/skel.pom.xml

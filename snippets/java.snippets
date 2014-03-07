@@ -12,5 +12,74 @@ snippet pc
 	  ${0}
 
 	}
+snippet cons
+	public ${1:`vim_snippets#Filename()`}(${2:args}) {
+		${0}
+	}
 snippet sop
-	System.out.println(${0:"Hello world"});
+	System.out.println("${0:Hello world}");
+snippet pi
+	public interface ${1:`vim_snippets#Filename()`} {
+
+	  ${0}
+
+	}
+snippet pv
+	public void ${1:methodName} {
+	  ${0}
+	}
+snippet gett
+	public ${1:type} get${2:attr}() {
+		return this.${3:variable};
+	}${0}
+snippet gets
+	public String get${1:attr}() {
+	  return this.${2:variable};
+	}${0}
+snippet sett
+	public void set${1:attr}(${2:type} ${3:variable}) {
+		this.$3 = $3;
+	}
+snippet sets
+	public String set${1:Attribute}()(String ${2:variable}) {
+		this.$2 = $2;
+	}
+snippet juniti
+	import org.junit.Before;
+	import org.junit.Test;
+	import static org.junit.Assert.*;
+snippet mocki
+	import static org.mockito.Mockito.*;
+snippet jc
+	import org.junit.Before;
+	import org.junit.Test;
+	import static org.junit.Assert.*;
+	import static org.mockito.Mockito.*;
+
+	public class ${1:`vim_snippets#Filename()`} {
+
+		@Before
+		public void setup() {
+			${2}
+		}
+
+		${0}
+	}
+snippet jtc
+	@Test
+	public void test${1:Method}() {
+
+		${0}
+
+	}
+snippet jts
+	import org.junit.runner.RunWith;
+	import org.junit.runners.Suite;
+	import org.junit.runners.Suite.SuiteClasses;
+
+	@RunWith(Suite.class)
+	@SuiteClasses({ ${1:classes} })
+
+	public class ${2:`vim_snippets#Filename()`} {
+		${0}
+	}

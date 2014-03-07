@@ -1,0 +1,37 @@
+snippet pom
+	<project>
+
+	  <modelVersion>4.0.0</modelVersion>
+	  <groupId>${1:groupId}</groupId>
+	  <artifactId>${2:artifactId}</artifactId>
+	  <packaging>${3:jar}</packaging>
+	  <version>${4:1.0-SNAPSHOT}</version>
+
+	  ${0}
+
+	</project>
+snippet djunit
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>${1:4.11}</version>
+	</dependency>
+	${0}
+snippet dmock
+	<dependency>
+		<groupId>org.mockito</groupId>
+		<artifactId>mockito-all</artifactId>
+		<version>${1:1.9.5}</version>
+	</dependency>
+	${0}
+snippet deps
+	<dependencies>
+		${0}
+	</dependencies>
+snippet dep
+	<dependency>
+		<groupId>${1:groupId}</groupId>
+		<artifactId>${2:artifactId}</artifactId>
+		<version>${3:version}</version>
+	<dependency>
+	${0}
