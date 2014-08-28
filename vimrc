@@ -8,12 +8,14 @@ set encoding=utf-8
 
 filetype off                   " (required for Vundle)
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 if filereadable(expand("~/.vim/vimrc.bundles"))
   source ~/.vim/vimrc.bundles
 endif
+
+call vundle#end()            " required
 
 " ##############################################################################
 " # Syntax highlighting                                                        #
@@ -28,9 +30,17 @@ filetype plugin indent on           " enable loading indent file for filetype
 " # Colour scheme                                                              #
 " ##############################################################################
 
-colorscheme bubblegum
-highlight NonText guibg=#060606
-highlight Folded  guibg=#0A0A0A guifg=#9090D0
+"colorscheme bubblegum
+"set background=dark
+colorscheme solarized
+"highlight NonText guibg=#060606
+"highlight Folded  guibg=#0A0A0A guifg=#9090D0
+
+if strftime("%H") < 6 || strftime("%H") > 19
+  set background=dark
+else
+  set background=light
+endif
 
 " ##############################################################################
 " # Editor                                                                     #
@@ -42,6 +52,14 @@ set tabstop=2
 set shiftwidth=2
 set textwidth=0
 set number
+
+" ##############################################################################
+" # Searching                                                                  #
+" ##############################################################################
+
+set hlsearch
+set incsearch
+" nmap <silent> ,/ :nohlsearch<CR>
 
 " ##############################################################################
 " # Force yourself to learn hjkl navigation                                    #
@@ -124,6 +142,9 @@ endfunction
 " # Custom Commands                                                            #
 " ##############################################################################
 
+" Write a file with sudo
+cmap w!! w !sudo tee % >/dev/null
+
 " Draws an 80-character comment box using the comment character you specify.
 " For example, in normal mode, enter:
 " 
@@ -135,6 +156,10 @@ endfunction
 " 
 :command -nargs=1 CommentBox :normal O<Esc>80i<args><Esc>yy2pl78r ^lllR
 :map ,cb :CommentBox<space>
+
+" Insert a blank line above or below without going into insert mode
+nmap <Leader>O :normal O<CR>
+nmap <Leader>o :normal o<CR>
 
 " ##############################################################################
 " # Skeleton Files                                                             #

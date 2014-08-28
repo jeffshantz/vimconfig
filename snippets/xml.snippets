@@ -24,6 +24,19 @@ snippet dmock
 		<version>${1:1.9.5}</version>
 	</dependency>
 	${0}
+snippet dpmock
+	<dependency>
+		<groupId>org.powermock</groupId>
+		<artifactId>powermock-module-junit4</artifactId>
+		<version>1.5.4</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+		<groupId>org.powermock</groupId>
+		<artifactId>powermock-api-mockito</artifactId>
+		<version>1.5.4</version>
+		<scope>test</scope>
+	</dependency>
 snippet deps
 	<dependencies>
 		${0}
@@ -33,5 +46,43 @@ snippet dep
 		<groupId>${1:groupId}</groupId>
 		<artifactId>${2:artifactId}</artifactId>
 		<version>${3:version}</version>
-	<dependency>
+	</dependency>
 	${0}
+snippet exjar
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-jar-plugin</artifactId>
+		<version>2.4</version>
+		<configuration>
+			<archive>
+				<manifest>
+					<mainClass>${1:ca.uwo.csd.cs2212.USERNAME.App}</mainClass>
+				</manifest>
+			</archive>
+		</configuration>
+	</plugin>
+	${0}
+snippet fatjar
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-assembly-plugin</artifactId>
+		<version>2.4</version>
+		<configuration>
+			<descriptorRefs>
+				<descriptorRef>jar-with-dependencies</descriptorRef>
+			</descriptorRefs>
+			<archive>
+				<manifest>
+					<mainClass>${1:ca.uwo.csd.cs2212.USERNAME.App}</mainClass>
+				</manifest>
+			</archive>
+		</configuration>
+		<executions>
+			<execution>
+				<phase>package</phase>
+				<goals>
+					<goal>single</goal>
+				</goals>
+			</execution>
+		</executions>
+	</plugin>
