@@ -30,9 +30,9 @@ filetype plugin indent on           " enable loading indent file for filetype
 " # Colour scheme                                                              #
 " ##############################################################################
 
-"colorscheme bubblegum
+colorscheme bubblegum
 "set background=dark
-colorscheme solarized
+"colorscheme solarized
 "highlight NonText guibg=#060606
 "highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
