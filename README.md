@@ -16,17 +16,18 @@ Install `vundle`:
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
+Link `~/.vimrc` to `~/.vim/vimrc`
+
+```bash
+ln -s ~/.vim/vimrc ~/.vimrc
+```
+
 Install all bundles:
 
 ```bash
 vim +BundleInstall +qall
 ```
 
-Link `~/.vimrc` to `~/.vim/vimrc` (if necessary)
-
-```bash
-ln -s ~/.vim/vimrc ~/.vimrc
-```
 
 Features
 --------
