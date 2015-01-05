@@ -21,9 +21,9 @@ Plugin 'vim-scripts/Tabmerge'
 Plugin 'ekalinin/Dockerfile.vim'
 
 " snipmate and its dependencies
-Plugin "MarcWeber/vim-addon-mw-utils"
-Plugin "tomtom/tlib_vim"
-Plugin "honza/vim-snippets"
-Plugin "garbas/vim-snipmate"
-" 
-Plugin "sukima/xmledit"
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/vim-snippets'
+Plugin 'garbas/vim-snipmate'
+
+Plugin 'sukima/xmledit'
