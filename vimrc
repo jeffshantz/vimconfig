@@ -8,34 +8,10 @@
  endif
 
 source ~/.vim/config/neobundle.vim
+source ~/.vim/config/colours.vim
 
 "let $LANG = 'en_US.UTF-8'
 set encoding=utf-8
-
-" ##############################################################################
-" # Syntax highlighting                                                        #
-" ##############################################################################
-
-set t_Co=256                        " 256 colours
-syntax on                           " syntax highlighing
-filetype on                         " try to detect filetypes
-filetype plugin indent on           " enable loading indent file for filetype
-
-" ##############################################################################
-" # Colour scheme                                                              #
-" ##############################################################################
-
-colorscheme bubblegum
-"set background=dark
-"colorscheme solarized
-"highlight NonText guibg=#060606
-"highlight Folded  guibg=#0A0A0A guifg=#9090D0
-
-if strftime("%H") < 6 || strftime("%H") > 19
-  set background=dark
-else
-  set background=light
-endif
 
 " ##############################################################################
 " # Editor                                                                     #
