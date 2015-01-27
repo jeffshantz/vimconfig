@@ -1,21 +1,16 @@
-set nocompatible               " We're running Vim -- not Vi! 
+" Note: Skip initialization for vim-tiny or vim-small.
+ if !1 | finish | endif
+
+ if has('vim_starting')
+   if &compatible
+     set nocompatible               " We're running Vim -- not Vi!
+   endif
+ endif
+
+source ~/.vim/config/neobundle.vim
+
 "let $LANG = 'en_US.UTF-8'
 set encoding=utf-8
-
-" ##############################################################################
-" # Vundle configuration                                                       #
-" ##############################################################################
-
-filetype off                   " (required for Vundle)
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-if filereadable(expand("~/.vim/vimrc.bundles"))
-  source ~/.vim/vimrc.bundles
-endif
-
-call vundle#end()            " required
 
 " ##############################################################################
 " # Syntax highlighting                                                        #
