@@ -1,8 +1,6 @@
 " let Vundle manage Vundle (required)
 Plugin 'gmarik/vundle'
 
-Plugin 'bling/vim-airline'
-Plugin 'bling/vim-bufferline'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-scripts/matchit.zip'

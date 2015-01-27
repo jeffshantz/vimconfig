@@ -13,6 +13,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " My Bundles here:
 
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'bling/vim-bufferline'
 
 call neobundle#end()
 
