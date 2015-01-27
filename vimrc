@@ -10,15 +10,7 @@
 source ~/.vim/config/neobundle.vim
 source ~/.vim/config/colours.vim
 source ~/.vim/config/editor.vim
-
-" ##############################################################################
-" # Force yourself to learn hjkl navigation                                    #
-" ##############################################################################
-
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
+source ~/.vim/config/navigation.vim
 
 " ##############################################################################
 " # Airline configuration                                                      #
