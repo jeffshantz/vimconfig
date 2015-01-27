@@ -9,28 +9,7 @@
 
 source ~/.vim/config/neobundle.vim
 source ~/.vim/config/colours.vim
-
-"let $LANG = 'en_US.UTF-8'
-set encoding=utf-8
-
-" ##############################################################################
-" # Editor                                                                     #
-" ##############################################################################
-
-set autoindent
-set expandtab
-set tabstop=2
-set shiftwidth=2
-set textwidth=0
-set number
-
-" ##############################################################################
-" # Searching                                                                  #
-" ##############################################################################
-
-set hlsearch
-set incsearch
-" nmap <silent> ,/ :nohlsearch<CR>
+source ~/.vim/config/editor.vim
 
 " ##############################################################################
 " # Force yourself to learn hjkl navigation                                    #
