@@ -41,30 +41,33 @@ let g:unite_prompt = '➠ '
 " Save session automatically.
 let g:unite_source_session_enable_auto_save = 1
 
-" Use the fuzzy matcher for everything
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
+if exists(":Unite")
 
-" Use the rank sorter for everything
-call unite#filters#sorter_default#use(['sorter_rank'])
-
-" Set up some custom ignores
-call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
-      \ 'ignore_pattern', join([
-      \ '\.git/',
-      \ 'git5/.*/review/',
-      \ 'google/obj/',
-      \ 'tmp/',
-      \ 'lib/Cake/',
-      \ 'node_modules/',
-      \ 'vendor/',
-      \ 'Vendor/',
-      \ 'app_old/',
-      \ 'acf-laravel/',
-      \ 'plugins/',
-      \ 'bower_components/',
-      \ '.sass-cache',
-      \ 'web/wp',
-      \ ], '\|'))
+  " Use the fuzzy matcher for everything
+  call unite#filters#matcher_default#use(['matcher_fuzzy'])
+  
+  " Use the rank sorter for everything
+  call unite#filters#sorter_default#use(['sorter_rank'])
+  
+  " Set up some custom ignores
+  call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
+        \ 'ignore_pattern', join([
+        \ '\.git/',
+        \ 'git5/.*/review/',
+        \ 'google/obj/',
+        \ 'tmp/',
+        \ 'lib/Cake/',
+        \ 'node_modules/',
+        \ 'vendor/',
+        \ 'Vendor/',
+        \ 'app_old/',
+        \ 'acf-laravel/',
+        \ 'plugins/',
+        \ 'bower_components/',
+        \ '.sass-cache',
+        \ 'web/wp',
+        \ ], '\|'))
+endif
 
 " Unite Commands ===============================================================
 
