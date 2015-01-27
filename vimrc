@@ -16,3 +16,5 @@ source ~/.vim/config/matchit.vim
 source ~/.vim/config/tabularize.vim
 source ~/.vim/config/custom.vim
 source ~/.vim/config/skel.vim
+source ~/.vim/config/vimfiler.vim
+source ~/.vim/config/unite.vim

@@ -34,6 +34,23 @@ Some of the features of this configuration include:
 
 * Airline status bar
 
+* Unite
+
+  * Commands
+    * `,f` - Fuzzy file open
+    * `,g` - Recursive grep
+    * `,y` - Yank history
+    * `,m` - MRU files
+    * `,b` - Open buffers
+    * `,c` - Quick commands
+
+  * When Unite is open:
+    * `Esc` or `qq` exits Unite
+    * `Ctrl+J` or `jj` allows you to select a menu item
+    * `Ctrl+R` refreshes Unite
+    * `Ctrl+S` opens the selected menu item in a horizontal split
+    * `Ctrl+V` opens the selected menu item in a vertical split
+
 * Tabularize
   * Use `,a=` to align by `=`
   * Use `,a:` to align by `:`

@@ -58,6 +58,12 @@ NeoBundle 'sukima/xmledit', {
 " Text filtering and alignment
 NeoBundle 'godlygeek/tabular'
 
+" Unite
+NeoBundle 'Shougo/unite.vim'
+
+" netrw replacement
+NeoBundle 'Shougo/vimfiler.vim'
+
 call neobundle#end()
 
 " Required:
