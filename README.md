@@ -22,6 +22,8 @@ Link `~/.vimrc` to `~/.vim/vimrc`
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
+Run `vim` to have NeoBundle install all plugins, exit, and rerun to ensure all
+plugins are loaded.
 
 Features
 --------
@@ -30,7 +32,7 @@ Some of the features of this configuration include:
 
 * Forcing one to use `hjkl` navigation
 
-* Powerline status bar
+* Airline status bar
 
 * Tabularize
   * Use `,a=` to align by `=`
@@ -41,6 +43,19 @@ Some of the features of this configuration include:
   * An 80-character comment box is inserted when you use `,cb #`, where `#` is the comment
     character to use.
 
+* Write using sudo
+  * Forgot to use `sudo vim`?  No problem.  Save the file using `:w!!` and it will be 
+    written as `root`.
+
+* Insert blank lines above/below without going into insert mode
+  * Above: `,O`
+  * Below: `,o`
+
+* Skeleton files
+  * `pom.xml`
+  * Angular JS - Edit any new file named `*-ng.html`, and you get a basic Angular skeleton
+  * Bootstrap - Edit any new file named `*-bs.html`, and you get a basic Bootstrap skeleton
+
 * Snippets
   * Plenty of snippets in `.vim/bundle/vim-snippets/snippets/`
   * I added a few custom Java snippets that I use in my teaching:
@@ -49,5 +64,3 @@ Some of the features of this configuration include:
     * `psvmte` - `public static void main(String[] args) throws Exception { }`
     * `sop` - `System.out.println("text");`
   * Additional snippets can be added to the `.vim/snippets` directory
-
-* `Ctrl-p` file navigation
