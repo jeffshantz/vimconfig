@@ -15,11 +15,4 @@ source ~/.vim/config/airline.vim
 source ~/.vim/config/matchit.vim
 source ~/.vim/config/tabularize.vim
 source ~/.vim/config/custom.vim
-
-
-" ##############################################################################
-" # Skeleton Files                                                             #
-" ##############################################################################
-
-" Skeleton for pom.xml
-"au BufNewFile pom.xml 0r ~/.vim/skel/skel.pom.xml
+source ~/.vim/config/skel.vim
