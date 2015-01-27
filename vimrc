@@ -12,6 +12,7 @@ source ~/.vim/config/colours.vim
 source ~/.vim/config/editor.vim
 source ~/.vim/config/navigation.vim
 source ~/.vim/config/airline.vim
+source ~/.vim/config/matchit.vim
 
 
 " ##############################################################################
