@@ -25,6 +25,9 @@ ln -s ~/.vim/vimrc ~/.vimrc
 Run `vim` to have NeoBundle install all plugins, exit, and rerun to ensure all
 plugins are loaded.
 
+Install [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) for 
+efficient code search (*optional but recommended*).
+
 Features
 --------
 
