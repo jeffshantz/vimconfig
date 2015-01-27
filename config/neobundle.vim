@@ -61,6 +61,9 @@ NeoBundle 'godlygeek/tabular'
 " Unite
 NeoBundle 'Shougo/unite.vim'
 
+" MRU file source for Unite
+NeoBundle 'Shougo/neomru.vim'
+
 " netrw replacement
 NeoBundle 'Shougo/vimfiler.vim'
 
