@@ -117,8 +117,9 @@ function! s:unite_settings()
   nmap <buffer> <c-j> <Plug>(unite_loop_cursor_down)
   nmap <buffer> <c-k> <Plug>(unite_loop_cursor_up)
 
-  " jj becuase you're lazy, and leave insert mode
+  " jj and kk to leave insert mode
   imap <buffer> jj <Plug>(unite_insert_leave)
+  imap <buffer> kk <Plug>(unite_insert_leave)
 
   " qq `` becuase you're lazy, and quit unite
   imap <buffer> qq <Plug>(unite_exit)
