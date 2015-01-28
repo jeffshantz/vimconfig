@@ -59,6 +59,14 @@ Some of the features of this configuration include:
   * Use `,a:` to align by `:`
   * Tabularize is called every time you type `|`, which is great for Cucumber tables
 
+* Commenting
+  * Uses vim-commentary to comment out code.
+  * `gcc` to toggle the current line
+  * `gc4j` to toggle the current line + the next 4 lines
+  * `gcap` to toggle the current paragraph
+  * `gcar` to toggle the current Ruby block (thanks to the textobj-rubyblock plugin)
+  * etc.
+
 * Comment boxes
   * An 80-character comment box is inserted when you use `,cb #`, where `#` is the comment
     character to use.

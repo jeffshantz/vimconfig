@@ -67,6 +67,9 @@ NeoBundle 'Shougo/neomru.vim'
 " netrw replacement
 NeoBundle 'Shougo/vimfiler.vim'
 
+" Custom text object for selecting ruby blocks
+NeoBundle 'nelstrom/vim-textobj-rubyblock', {'depends': 'kana/vim-textobj-user' }
+
 call neobundle#end()
 
 " Required:
