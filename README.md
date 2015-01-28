@@ -79,6 +79,11 @@ Some of the features of this configuration include:
   * Above: `,O`
   * Below: `,o`
 
+* Rails
+  * Uses vim-rails plugin
+  * `,q` added to quickly switch back and forth between alternate files (e.g. a class and its spec)
+    rather than having to type `:A` each time.
+
 * Skeleton files
   * `pom.xml`
   * Angular JS - Edit any new file named `*-ng.html`, and you get a basic Angular skeleton
