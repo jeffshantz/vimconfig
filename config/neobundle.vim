@@ -70,6 +70,9 @@ NeoBundle 'Shougo/vimfiler.vim'
 " Custom text object for selecting ruby blocks
 NeoBundle 'nelstrom/vim-textobj-rubyblock', {'depends': 'kana/vim-textobj-user' }
 
+" Ruby on Rails
+NeoBundle 'tpope/vim-rails', {'depends': 'tpope/vim-bundler' }
+
 call neobundle#end()
 
 " Required:
