@@ -19,3 +19,4 @@ source ~/.vim/config/skel.vim
 source ~/.vim/config/vimfiler.vim
 source ~/.vim/config/unite.vim
 source ~/.vim/config/rails.vim
+source ~/.vim/config/rspec.vim

@@ -73,6 +73,9 @@ NeoBundle 'nelstrom/vim-textobj-rubyblock', {'depends': 'kana/vim-textobj-user' 
 " Ruby on Rails
 NeoBundle 'tpope/vim-rails', {'depends': 'tpope/vim-bundler' }
 
+" RSpec
+NeoBundle 'thoughtbot/vim-rspec'
+
 call neobundle#end()
 
 " Required:
