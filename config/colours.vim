@@ -11,7 +11,9 @@ filetype plugin indent on           " enable loading indent file for filetype
 " # Colour scheme                                                              #
 " ##############################################################################
 
-set background=dark
+if empty($COLORFGBG)
+  set background=dark
+endif
 
 " silent! prevents error on first run, before NeoBundle has a chance to install
 " the solarized colour scheme.
