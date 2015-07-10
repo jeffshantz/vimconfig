@@ -1,0 +1,23 @@
+snippet iie
+	it { is_expected.to ${0} }
+
+snippet vpo
+	validate_presence_of(:${1:field})
+
+snippet vlo
+	validate_length_of(:${1:field}).is_at_most(${2:length})
+
+snippet vuo
+	validate_uniqueness_of(:${1:field})
+
+snippet vno
+	validate_numericality_of(:${1:field}).is_greater_than(${2:minimum}).only_integer
+
+snippet av
+	allow_value(${1:value}).for(:${2:field})
+
+snippet hdbc
+	have_db_column(:${1:column}).of_type(:${2:type}).with_options(${3:options})
+
+snippet bt
+	belong_to(:${1:associated_model})

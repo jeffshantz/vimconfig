@@ -76,6 +76,9 @@ NeoBundle 'tpope/vim-rails', {'depends': 'tpope/vim-bundler' }
 " RSpec
 NeoBundle 'thoughtbot/vim-rspec'
 
+" Vim front-end for the silver searcher
+NeoBundle 'rking/ag.vim'
+
 call neobundle#end()
 
 " Required:
